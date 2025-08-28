@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Hub - Your Journey to Wellness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <h1 id="mainHeader">Health Hub - Your Journey to Wellness</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tips">Healthy Tips</a></li>
+        <li><a href="#routine">Daily Routine</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to Health Hub! We are dedicated to promoting wellness through education, daily habits, and a balanced lifestyle.</p>
+    <button onclick="toggleSection('about')">Toggle About Section</button>
+  </section>
+
+  <!-- ================= HEALTHY TIPS ================= -->
+  <section id="tips">
+    <h2>Healthy Tips</h2>
+    <ul id="tipsList">
+      <li>Drink plenty of water daily.</li>
+      <li>Exercise regularly.</li>
+      <li>Eat a balanced diet with fruits and vegetables.</li>
+    </ul>
+    <button id="addTipBtn">➕ Add New Tip</button>
+  </section>
+
+  <!-- ================= DAILY ROUTINE ================= -->
+  <section id="routine">
+    <h2>Daily Routine</h2>
+    <table id="routineTable" border="1">
+      <tr>
+        <th>Time</th>
+        <th>Activity</th>
+      </tr>
+      <tr>
+        <td>7:00 AM</td>
+        <td>Morning Exercise</td>
+      </tr>
+      <tr>
+        <td>8:00 AM</td>
+        <td>Healthy Breakfast</td>
+      </tr>
+      <tr>
+        <td>10:00 PM</td>
+        <td>Go to Bed</td>
+      </tr>
+    </table>
+    <button id="highlightTableBtn">✨ Highlight Routine</button>
+  </section>
+
+  <!-- ================= INTERACTIVITY BUTTON ================= -->
+  <section>
+    <h2>Personalize Your Hub</h2>
+    <button id="changeTitleBtn">Change Title</button>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@healthhub.com</p>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>&copy; 2025 Health Hub. All rights reserved.</p>
+  </footer>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="script.js"></script>
+</body>
+</html>

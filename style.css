@@ -1,0 +1,149 @@
+/* =============================
+   Global Styles
+============================= */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #FAFAFA; /* Neutral */
+  color: #212529; /* Text */
+}
+
+/* =============================
+   Header
+============================= */
+header {
+  background: #0077B6; /* Primary */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* =============================
+   Navigation (Flexbox)
+============================= */
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  background: #0077B6; /* Primary */
+  margin: 0;
+  padding: 10px 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #90E0EF; /* Secondary */
+}
+
+/* =============================
+   Section Styling
+============================= */
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1100px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #0077B6;
+}
+
+/* =============================
+   Tips List
+============================= */
+ul li {
+  margin: 8px 0;
+  padding: 8px;
+  border-left: 4px solid #0077B6;
+  background: #CAF0F8; /* Accent */
+}
+
+/* =============================
+   Routine Table (Grid)
+============================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+thead, tbody, tr {
+  display: contents;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+th {
+  background: #90E0EF; /* Secondary */
+  color: #212529;
+}
+
+tr:nth-child(even) td {
+  background: #F9F9F9;
+}
+
+/* =============================
+   Footer
+============================= */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #0077B6;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* =============================
+   Responsive Design
+============================= */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  table {
+    grid-template-columns: 1fr; /* Stack */
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  ul li, th, td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
